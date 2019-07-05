@@ -71,7 +71,7 @@ plot(sig_fft); grid minor     % plot FFT output
 axis ([0 200 0 1]);
 xlabel('measured range');
 ```
-![result](https://github.com/RustemIskuzhin/SFND-Radar-Target-Generation-and-Detection/blob/master/images/2D_CFAR.png)
+![result](https://github.com/godloveliang/SFND-Radar-Target-Generation-and-Detection-/blob/master/img/range_FFT.png)
 
 #### 4. doppler FFT (2st FFT)
 
@@ -92,7 +92,7 @@ doppler_axis = linspace(-100,100,Nd);
 range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure('Name','Range Doppler Map'),surf(doppler_axis,range_axis,RDM);
 ```
-![result](https://github.com/RustemIskuzhin/SFND-Radar-Target-Generation-and-Detection/blob/master/images/2D_CFAR.png)
+![result](https://github.com/godloveliang/SFND-Radar-Target-Generation-and-Detection-/blob/master/img/2D_FFT.PNG)
 
 #### 5. 2D CFAR
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map.
@@ -159,4 +159,4 @@ end
 Training, Guard cells and offset are selected by increasing and decreasing to match the image shared in walkthrough.
 
 
-![result](https://github.com/RustemIskuzhin/SFND-Radar-Target-Generation-and-Detection/blob/master/images/2D_CFAR.png)
+![result](https://github.com/godloveliang/SFND-Radar-Target-Generation-and-Detection-/blob/master/img/CA_CFAR.PNG)
